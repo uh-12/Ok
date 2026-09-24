@@ -11834,4 +11834,3 @@ getgenv().ManualSpamAnimationFix = true
 macroAnimFix = true
 
 print("Kittylol hi member!")
-Changer tabs ready!")
