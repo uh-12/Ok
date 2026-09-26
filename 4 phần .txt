@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/uh-12/Ok/refs/heads/main/1245_text_alphanumeric_NOTIFICATION_FIXED.luau"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/uh-12/Ok/refs/heads/main/1245_text_alphanumeric_NOTIFICATION_FIXED2_TABTEXT.luau"))()
 
 local Window = Library._new()
 
