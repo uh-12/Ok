@@ -140,6 +140,13 @@ function Window:create_category(_category_name)
                 })
             end
 
+            -- Ailon modules are collapsible. The original Kittylol groups
+            -- displayed their controls immediately, so open this module now.
+            -- This uses the exact Ailon ModuleManager API (change_state).
+            pcall(function()
+                Module:change_state(true)
+            end)
+
             return Group
         end
 
@@ -148,8 +155,6 @@ function Window:create_category(_category_name)
 
     return Category
 end
-
-Window:load()
 
 
 local Players = cloneref(game:GetService('Players'))
@@ -11626,3 +11631,8 @@ getgenv().ManualSpamAnimationFix = true
 macroAnimFix = true
 
 print("Kittylol UI loaded - Combat, Visual, Player & Changer tabs ready!")
+
+-- Load Ailon after every tab/module/control has been created.
+pcall(function()
+    Window:load()
+end)
